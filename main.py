@@ -16,8 +16,8 @@ while True:
     number = randint(0, 1)
 
     while True:
-        user_number = int(input("Zero or One? (0/1)"))
-        if user_number not in [0, 1]:
+        user_number = int(input("Zero or One? (0/1): "))
+        if user_number in [0, 1]:
             break
 
     if user_number == number:
