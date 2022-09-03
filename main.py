@@ -10,6 +10,8 @@ print(f"Your name is {name}\nYour age is {age}\nYour hobby is {hobby}")
 
 print("Nice to meet you! Let's play to my game!")
 
+score = 0
+
 while True:
     number = randint(0, 1)
 
@@ -20,12 +22,14 @@ while True:
 
     if user_number == number:
         print("Yes!))")
+        score += 1
     else:
         print("Nooo((")
 
     answer = input("One more round?;) (y - yes/n- no)")
 
     if answer == "n":
+        print(f"Thank you for the game! Your score: {score}")
         break
     
 input()
